@@ -1,0 +1,10 @@
+## Netlify configuration for this project
+# Ensures Netlify packages functions from the `netlify/functions` directory
+# and publishes the site from the project root.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[dev]
+  functions = "netlify/functions"
