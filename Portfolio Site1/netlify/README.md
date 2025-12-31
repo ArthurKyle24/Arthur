@@ -5,7 +5,7 @@ This function forwards the site's contact form to WhatsApp using Twilio. It expe
 - TWILIO_ACCOUNT_SID
 - TWILIO_AUTH_TOKEN
 - TWILIO_WHATSAPP_FROM (example: whatsapp:+14155238886)
-- TARGET_WHATSAPP_NUMBER (example: whatsapp:+2349022086672)
+- TARGET_WHATSAPP_NUMBER (example: whatsapp:+2348108192409)
 
 Deploy steps:
 1. Commit and push your repo to GitHub.
