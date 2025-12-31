@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Orji | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Background -->
+    <div class="background-container">
+        <canvas id="background-canvas"></canvas>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="logo-text">Arthur<span class="dot">...</span></span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://github.com/ArthurKyle24" target="_blank" class="social-link magnetic"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/arthur-orji-94021634b" target="_blank" class="social-link magnetic"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/arthurkyle24?s=21" target="_blank" class="social-link magnetic"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.message/+2349022086672" target="_blank" class="social-link magnetic"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text reveal">
+                    <h1 class="glitch" data-text="Alex Morgan">Arthur Orji</h1>
+                    <div class="hero-subtitle scroll-trigger" data-animation="fadeIn">
+                        <span class="subtitle-text">I'm a </span>
+                        <span class="typing"></span>
+                    </div>
+                    <p class="hero-description scroll-trigger" data-animation="fadeInUp">Crafting digital experiences that blend creativity with cutting edge technology. Specializing in Frontend Development and Data Analytics with a focus on immersive user interfaces and scalable solutions.</p>
+                    <div class="hero-cta scroll-trigger" data-animation="fadeInUp">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="avatar-container">
+                            <div class="avatar-3d">
+                                <!-- Fallback placeholder image (visible if JS fails or before 3D loads) -->
+                                <img class="avatar-placeholder" src="assets/images/Arthur.jpg" alt="Avatar placeholder" />
+                            </div>
+                            <div class="avatar-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="scroll-text"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-subtitle"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image reveal scroll-trigger" data-animation="fadeInLeft">
+                        <div class="image-frame tilt">
+                            <img src="assets/images/Arthur.jpg" alt="Arthur Orji">
+                            <div class="frame-border"></div>
+                        </div>
+                        <div class="experience-badge floating">
+                            <span class="years">4+</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                    <div class="about-text reveal scroll-trigger" data-animation="fadeInRight">
+                        <p>I'm a passionate Frontend Developer and Data Analyst with a keen eye for design and a love for creating seamless user experiences. With years of experience in the industry, I've worked on a diverse range of projects from enterprise applications to innovative startups.</p>
+                        <p>My approach combines technical expertise with creative problem solving, allowing me to build solutions that are not only functional but also visually compelling and intuitive to use.</p>
+                        <div class="stats-container staggered">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="12">0</div>
+                                <div class="stat-text">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="5">0</div>
+                                <div class="stat-text">Collaborations</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="10">0</div>
+                                <div class="stat-text">Happy Clients</div>
+                            </div>
+                        </div>
+                        <a href="/assets/docs/CV_1.pdf" class="btn btn-primary magnetic" download="Resume for Arthur Orji.pdf">Download CV</a>
+                    </div>
+                </div>
+                <div class="timeline-container">
+                    <h3 class="timeline-title">My Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023 - 2024</div>
+                            <div class="timeline-content">
+                                <h3>Data Analyst</h3>
+                                <h4>Pioneer Inc.</h4>
+                                <p>Analyzed data trends and provided actionable insights to improve business strategies. Collaborated with cross-functional teams to enhance data collection and reporting processes.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content">
+                                <h3>Python Developer</h3>
+                                <h4>TechNova Solutions</h4>
+                                <p>Developing scalable web applications using Python and Django. Collaborating with cross-functional teams to define and implement new features.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022 - Date</div>
+                            <div class="timeline-content">
+                                <h3>Software Engineering Degree</h3>
+                                <h4>Federal University of Technology, Owerri</h4>
+                                <p>Bachelor's degree in Software Engineering with focus on web technologies and software engineering principles.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - 2022</div>
+                            <div class="timeline-content">
+                                <h3>Frontend Developer</h3>
+                                <h4>I. O. H. S.</h4>
+                                <p>Created interactive user interfaces using HTML, CSS, and JavaScript. Collaborated with designers to implement pixel-perfect designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-subtitle"></div>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-text reveal scroll-trigger" data-animation="fadeInLeft">
+                        <p>I specialize in building frontend web services with a focus on creating intuitive user interfaces and robust interactive systems. My technical expertise spans across multiple languages, frameworks, and tools, allowing me to tackle diverse challenges in web development.</p>
+                        <div class="skill-bars">
+                            <div class="skill-bar staggered">
+                                <div class="skill-info">
+                                    <span>Frontend Development</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-percent="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar staggered">
+                                <div class="skill-info">
+                                    <span>UI/UX Design</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-percent="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar staggered">
+                                <div class="skill-info">
+                                    <span>MySQL</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-percent="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar staggered">
+                                <div class="skill-info">
+                                    <span>Database Management</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-percent="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar staggered">
+                                <div class="skill-info">
+                                    <span>Python Programming</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-percent="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar staggered">
+                                <div class="skill-info">
+                                    <span>Backend Development</span>
+                                    <span>30%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-progress-bar" data-percent="30"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-icons reveal scroll-trigger" data-animation="fadeInRight">
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="HTML5">
+                                <i class="fab fa-html5"></i>
+                                <div class="skill-tooltip">HTML5</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="CSS3">
+                                <i class="fab fa-css3-alt"></i>
+                                <div class="skill-tooltip">CSS3</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="JavaScript">
+                                <i class="fab fa-js"></i>
+                                <div class="skill-tooltip">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="React">
+                                <i class="fab fa-react"></i>
+                                <div class="skill-tooltip">React</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="Node.js">
+                                <i class="fab fa-node-js"></i>
+                                <div class="skill-tooltip">Node.js</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="Python">
+                                <i class="fab fa-python"></i>
+                                <div class="skill-tooltip">Python</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="Git">
+                                <i class="fab fa-git-alt"></i>
+                                <div class="skill-tooltip">Git</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="MongoDB">
+                                <i class="fas fa-database"></i>
+                                <div class="skill-tooltip">MongoDB</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="AWS">
+                                <i class="fab fa-aws"></i>
+                                <div class="skill-tooltip">AWS</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="Figma">
+                                <i class="fab fa-figma"></i>
+                                <div class="skill-tooltip">Figma</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="MySQL">
+                                <i class="fas fa-server"></i>
+                                <div class="skill-tooltip">MySQL</div>
+                            </div>
+                        </div>
+                        <div class="skill-icon-container">
+                            <div class="skill-icon staggered floating" data-skill="Excel">
+                                <i class="fas fa-file-excel"></i>
+                                <div class="skill-tooltip">Excel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-subtitle">Few among the many</div>
+                </div>
+        
+                <div class="projects-grid staggered">
+                    <div class="project-card reveal scroll-trigger tilt" data-animation="fadeInUp" data-category="web">
+                        <div class="project-img">
+                            <img src="/assets/images/iohs.png" alt="E-commerce Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Iroko Organic Health Solutions</h3>
+                            <p class="project-description">A full-featured health advertising and e-commerce platform focused on holistic wellness solutions that promote healthy living, emotional balance, and overall well-being.</p>
+                            <div class="project-tech">
+                                <span class="floating">React</span>
+                                <span class="floating">Node.js</span>
+                                <span class="floating">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://iohs.vercel.app" class="project-link magnetic"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/ArthurKyle24/I.O.H.S." class="project-link magnetic"><i class="fab fa-github"></i></a>
+                                <button class="project-link project-details-btn magnetic" data-project="project1"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal scroll-trigger tilt" data-animation="fadeInUp" data-category="mobile">
+                        <div class="project-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fitness Tracker App</h3>
+                            <p class="project-description">A mobile application for tracking workouts, nutrition, and health metrics with data visualization.</p>
+                            <div class="project-tech">
+                                <span class="floating">React Native</span>
+                                <span class="floating">Firebase</span>
+                                <span class="floating">Redux</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link magnetic"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link magnetic"><i class="fab fa-github"></i></a>
+                                <button class="project-link project-details-btn magnetic" data-project="project2"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal scroll-trigger tilt" data-animation="fadeInUp" data-category="ui">
+                        <div class="project-img">
+                            <img src="assets/images/iohs.png" alt="Project screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">My Github Profile</h3>
+                            <p class="project-description">Portraying some of my public work via repos.</p>
+                            <div class="project-tech">
+                                <span class="floating"></span>
+                                <span class="floating"></span>
+                                <span class="floating"></span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/arthurkyle24" class="project-link magnetic"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/arthurkyle24" class="project-link magnetic"><i class="fab fa-github"></i></a>
+                                <button class="project-link project-details-btn magnetic" data-project="project3"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal -->
+        <div class="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Testimonials</h2>
+                    <div class="section-subtitle"></div>
+                </div>
+                <div class="testimonials-slider reveal scroll-trigger" data-animation="fadeIn">
+                    <div class="testimonial-card tilt">
+                        <div class="quote-icon floating"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text scroll-trigger" data-animation="fadeIn">Arthur delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise transformed our business. The user interface is intuitive and the backend systems are robust and scalable.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Ijeoma</h4>
+                                <p class="author-position">CEO, Pioneer Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card tilt">
+                        <div class="quote-icon floating"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text scroll-trigger" data-animation="fadeIn">Working with Arthur was a game changer for our startup. He quickly understood our vision and translated it into a beautiful, functional application. His problem solving skills and communication made the development process smooth and enjoyable.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4 class="author-name">Ikechukwu Hilary</h4>
+                                <p class="author-position">Founder, I.O.H.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card tilt">
+                        <div class="quote-icon floating"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text scroll-trigger" data-animation="fadeIn">Arthur's redesign of our dashboard transformed our user engagement metrics. His understanding of UX principles and technical implementation is impressive. He delivered on time and was responsive to feedback throughout the project.</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4 class="author-name">Engr. Daniel</h4>
+                                <p class="author-position">Product Manager, DataViz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-subtitle">Get In Touch</div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info reveal scroll-trigger" data-animation="fadeInLeft">
+                        <div class="contact-card staggered">
+                            <div class="contact-icon floating">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Owerri, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="contact-card staggered">
+                            <div class="contact-icon floating">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>arthurorji24@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card staggered">
+                            <div class="contact-icon floating">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+234 902 208 6672</p>
+                            </div>
+                        </div>
+                        <div class="contact-social staggered">
+                            <h3>Follow Me</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/ArthurKyle24" target="_blank" class="social-link magnetic"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/arthur-orji-94021634b" target="_blank" class="social-link magnetic"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://x.com/arthurkyle24?s=21" target="_blank" class="social-link magnetic"><i class="fab fa-twitter"></i></a>
+                                <a href="https://wa.message/+2349022086672" target="_blank" class="social-link magnetic"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container reveal scroll-trigger" data-animation="fadeInRight">
+                        <form id="contactForm" class="contact-form">
+                            <!-- Honeypot field to trap bots (should be left empty) -->
+                            <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+                                <label for="hp">Leave this field empty</label>
+                                <input type="text" id="hp" name="hp" autocomplete="off" tabindex="-1">
+                            </div>
+                            <div class="form-group staggered">
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                                
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group staggered">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group staggered">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group staggered">
+                                <textarea id="message" name="message" placeholder="We'd like to hear your feedback!" required></textarea>
+                                
+                                <span class="form-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary magnetic">Send Message</button>
+                            <div class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content reveal">
+                <div class="footer-logo">
+                    <span class="logo-text glitch" data-text="AM.">AO<span class="dot">.</span></span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Arthur Orji. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="" class="magnetic">Privacy Policy</a>
+                    <a href="" class="magnetic">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top floating magnetic">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GLTFLoader (for loading 3D models) -->
+    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- OrbitControls (optional but enables model interaction) -->
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/background.js" defer></script>
+</body>
+</html>

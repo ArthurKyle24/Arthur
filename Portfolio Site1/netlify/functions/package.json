@@ -1,0 +1,9 @@
+{
+  "name": "netlify-functions-deps",
+  "version": "1.0.0",
+  "description": "Dependencies for Netlify functions",
+  "private": true,
+  "dependencies": {
+    "twilio": "^4.15.0"
+  }
+}
